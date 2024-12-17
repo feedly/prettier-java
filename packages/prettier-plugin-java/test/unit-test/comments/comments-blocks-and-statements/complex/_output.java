@@ -1,5 +1,4 @@
 public class PrettierTest {
-
   var x = 0;
 
   public void myFunction(int arg1) {

@@ -35,7 +35,6 @@ public record Pet() {
 }
 
 class T {
-
   String record = "1";
 
   void t() {

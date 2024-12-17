@@ -251,6 +251,17 @@ export class ClassesPrettierVisitor extends BaseCstPrettierPrinter {
         }
       });
 
+      // feedly code style
+      if (
+          ctx.classBodyDeclaration[0].children.classMemberDeclaration &&
+          (ctx.classBodyDeclaration[0].children.classMemberDeclaration[0]
+              .children.fieldDeclaration  ||
+            ctx.classBodyDeclaration[0].children.classMemberDeclaration[0]
+              .children.Semicolon )
+        ) {
+        shouldHardline = false;
+      }
+
       if (
         (ctx.classBodyDeclaration[0].children.classMemberDeclaration ||
           ctx.classBodyDeclaration[0].children.constructorDeclaration) &&

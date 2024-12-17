@@ -12,6 +12,5 @@ public class ClassDeclaration {
 }
 
 class ClassWithSemicolon {
-
   private FieldOneClass fieldOne;
 }

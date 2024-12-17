@@ -1,5 +1,4 @@
 class T {
-
   // Fix for https://github.com/jhipster/prettier-java/issues/453
   SomeClass.@Valid SomeInnerClass someInnerClass = someClass
     .getInteractions()
